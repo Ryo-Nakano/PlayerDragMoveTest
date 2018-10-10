@@ -43,12 +43,12 @@ public class PlayerController : MonoBehaviour {
 
 
 
-			//===画面外にPlayerがいかないようにする工夫===
-			if (newPos.x > 9.0f) {
-				newPos = new Vector3 (9.0f, newPos.y, newPos.z);
+			//===画面外にPlayerがいかないようにする工夫=== 【1242×2208想定】
+			if (newPos.x > 2.5f) {
+				newPos = new Vector3 (2.5f, newPos.y, newPos.z);
 			}
-			if (newPos.x < -9.0f) {
-				newPos = new Vector3 (-9.0f, newPos.y, newPos.z);
+			if (newPos.x < -2.5f) {
+				newPos = new Vector3 (-2.5f, newPos.y, newPos.z);
 			}
 			if (newPos.y > 6.0f) {
 				newPos = new Vector3 (newPos.x, 6.0f, newPos.z);
